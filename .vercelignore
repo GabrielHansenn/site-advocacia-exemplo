@@ -1,0 +1,6 @@
+# Arquivos de desenvolvimento que não devem ser publicados
+.claude
+.impeccable
+PRODUCT.md
+DESIGN.md
+README.md

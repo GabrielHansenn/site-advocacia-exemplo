@@ -1,0 +1,422 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Aureum Advocacia | Escritório de advocacia para pessoas e empresas</title>
+  <meta name="description" content="Atuação jurídica pautada pela ética, excelência técnica e atendimento personalizado em Direito Civil, Empresarial, Trabalhista, Família e Sucessões, Imobiliário e Previdenciário.">
+  <meta name="theme-color" content="#14100C">
+  <link rel="canonical" href="https://aureum-advocacia.vercel.app/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:site_name" content="Aureum Advocacia">
+  <meta property="og:title" content="Aureum Advocacia | Tradição, estratégia e confiança">
+  <meta property="og:description" content="Atuação jurídica pautada pela ética, excelência técnica e atendimento personalizado para pessoas e empresas.">
+  <meta property="og:image" content="https://aureum-advocacia.vercel.app/assets/images/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/fonts/montserrat-var.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/style.css">
+  <script>document.documentElement.classList.add('js');</script>
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <!-- Ícones (SVG sprite, traço único de 1.25) -->
+  <svg class="sprite" aria-hidden="true" focusable="false">
+    <symbol id="i-civil" viewBox="0 0 32 32"><path d="M9 4h10l6 6v18H9z"/><path d="M19 4v6h6"/><path d="M13 16h8M13 20h8"/><path d="M13 25c1.2-1.6 2.2-1.6 3 0s1.8 1.6 3 0"/></symbol>
+    <symbol id="i-empresarial" viewBox="0 0 32 32"><path d="M5 28h22"/><path d="M8 28V9h10v19"/><path d="M18 14h6v14"/><path d="M11.5 13h3M11.5 17h3M11.5 21h3M21 18h0M21 22h0"/></symbol>
+    <symbol id="i-trabalhista" viewBox="0 0 32 32"><path d="M8 5h14a2 2 0 0 1 2 2v20H10a2 2 0 0 1-2-2z"/><path d="M8 23a2 2 0 0 1 2-2h14"/><path d="M13 10h7M13 14h5"/></symbol>
+    <symbol id="i-familia" viewBox="0 0 32 32"><circle cx="12.5" cy="17" r="6.5"/><circle cx="19.5" cy="17" r="6.5"/><path d="M16 6.5v2.5"/></symbol>
+    <symbol id="i-imobiliario" viewBox="0 0 32 32"><circle cx="11" cy="16" r="5"/><path d="M16 16h12M24 16v4M20 16v3"/><circle cx="11" cy="16" r="1.4"/></symbol>
+    <symbol id="i-previdenciario" viewBox="0 0 32 32"><path d="M9 4h14M9 28h14"/><path d="M10.5 4c0 7 11 7 11 12s-11 5-11 12"/><path d="M21.5 4c0 7-11 7-11 12s11 5 11 12"/><path d="M13 25h6"/></symbol>
+    <symbol id="i-chevron" viewBox="0 0 16 16"><path d="M6 3.5 10.5 8 6 12.5"/></symbol>
+    <!-- Logotipo oficial do WhatsApp (Simple Icons, CC0) -->
+    <symbol id="i-whatsapp" viewBox="0 0 24 24"><path fill="currentColor" stroke="none" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3.5" y="5.5" width="17" height="13"/><path d="m4 6.5 8 6 8-6"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-6.5-6.2-6.5-11a6.5 6.5 0 0 1 13 0c0 4.8-6.5 11-6.5 11z"/><circle cx="12" cy="10" r="2.3"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></symbol>
+  </svg>
+
+  <!-- ============ HEADER ============ -->
+  <header class="site-header" data-header>
+    <div class="container site-header__inner">
+      <a class="logo" href="#inicio" aria-label="Aureum Advocacia, voltar ao início">
+        <span class="logo__name">Aureum</span>
+        <span class="logo__rule" aria-hidden="true"></span>
+        <span class="logo__kind">Advocacia</span>
+      </a>
+
+      <nav class="nav" id="menu" aria-label="Navegação principal" data-nav>
+        <ul class="nav__list">
+          <li><a class="nav__link" href="#inicio">Início</a></li>
+          <li><a class="nav__link" href="#escritorio">O Escritório</a></li>
+          <li><a class="nav__link" href="#atuacao">Áreas de Atuação</a></li>
+          <li><a class="nav__link" href="#equipe">Nossa Equipe</a></li>
+          <li><a class="nav__link" href="#contato">Contato</a></li>
+        </ul>
+        <a class="btn btn--gold nav__cta" href="#contato">Entre em Contato</a>
+      </nav>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu" data-menu-toggle>
+        <span class="visually-hidden" data-menu-label>Abrir menu</span>
+        <span class="menu-toggle__bars" aria-hidden="true"></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="conteudo">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="inicio" aria-labelledby="hero-title">
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <h1 class="hero__title" id="hero-title">Tradição, estratégia e confiança para defender o que importa.</h1>
+          <p class="hero__lead">Atuação jurídica pautada pela ética, excelência técnica e atendimento personalizado para pessoas e empresas.</p>
+          <div class="hero__actions">
+            <a class="btn btn--gold" href="#contato">Agende uma Consulta</a>
+            <a class="link-quiet" href="#escritorio">Conheça o Escritório</a>
+          </div>
+        </div>
+
+        <figure class="hero__figure">
+          <picture>
+            <source media="(max-width: 860px)" srcset="assets/images/hero-colunata-720.webp" width="720" height="900">
+            <img src="assets/images/hero-colunata-1200.webp" width="1200" height="1500" alt="Colunata de pedra iluminada por luminárias ao anoitecer" fetchpriority="high" decoding="async">
+          </picture>
+          <span class="hero__frame" aria-hidden="true"></span>
+          <figcaption class="hero__inscription">Excelência jurídica, compromisso com você</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ============ O ESCRITÓRIO ============ -->
+    <section class="section section--paper about" id="escritorio" aria-labelledby="about-title">
+      <div class="container about__grid">
+        <div class="about__media">
+          <figure class="about__main reveal">
+            <img src="assets/images/escritorio-portico.webp" width="1000" height="1250" alt="Pórtico de pedra de um edifício histórico, com luz quente sobre as colunas" loading="lazy" decoding="async">
+          </figure>
+          <figure class="about__detail reveal">
+            <img src="assets/images/escritorio-livros.webp" width="800" height="600" alt="Lombadas de livros antigos encadernados em couro com detalhes dourados" loading="lazy" decoding="async">
+          </figure>
+        </div>
+
+        <div class="about__text">
+          <h2 class="section-title" id="about-title">Uma advocacia construída sobre princípios sólidos.</h2>
+          <div class="prose">
+            <p>A Aureum parte de uma convicção simples: cada caso precisa ser compreendido antes de ser conduzido. Ouvimos com atenção, estudamos a situação em detalhe e só então definimos o caminho jurídico mais adequado.</p>
+            <p>Atendemos pessoas e empresas com a mesma seriedade. Ética no trato, rigor técnico na análise e clareza em cada orientação. As estratégias são construídas para a realidade de quem nos procura, nunca a partir de modelos prontos.</p>
+          </div>
+          <blockquote class="pull-quote">
+            <p>Conhecimento jurídico só tem valor quando se transforma em orientação clara para quem precisa decidir.</p>
+          </blockquote>
+          <dl class="facts">
+            <div class="facts__item">
+              <dt>Atendimento pessoal</dt>
+              <dd>Você conversa diretamente com o advogado responsável pelo seu caso.</dd>
+            </div>
+            <div class="facts__item">
+              <dt>Pessoas e empresas</dt>
+              <dd>Orientação preventiva e atuação em demandas judiciais e extrajudiciais.</dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ÁREAS DE ATUAÇÃO ============ -->
+    <section class="section section--ink practice" id="atuacao" aria-labelledby="practice-title">
+      <div class="container">
+        <div class="practice__head">
+          <h2 class="section-title" id="practice-title">Áreas de atuação</h2>
+          <p class="practice__intro">Seis frentes do direito, conduzidas com o mesmo cuidado. Escolha um tema para iniciar uma conversa com a equipe.</p>
+        </div>
+
+        <ol class="index" role="list">
+          <li class="index__row">
+            <a class="index__link" href="#contato" data-area="Direito Civil">
+              <svg class="index__icon" aria-hidden="true"><use href="#i-civil"/></svg>
+              <span class="index__name">Direito Civil</span>
+              <span class="index__desc">Contratos, responsabilidade civil, cobranças e indenizações, com análise preventiva e atuação em disputas.</span>
+              <span class="index__go">Conversar sobre este tema <svg aria-hidden="true"><use href="#i-chevron"/></svg></span>
+            </a>
+          </li>
+          <li class="index__row">
+            <a class="index__link" href="#contato" data-area="Direito Empresarial">
+              <svg class="index__icon" aria-hidden="true"><use href="#i-empresarial"/></svg>
+              <span class="index__name">Direito Empresarial</span>
+              <span class="index__desc">Estruturação societária, contratos comerciais e assessoria contínua para as decisões do dia a dia da empresa.</span>
+              <span class="index__go">Conversar sobre este tema <svg aria-hidden="true"><use href="#i-chevron"/></svg></span>
+            </a>
+          </li>
+          <li class="index__row">
+            <a class="index__link" href="#contato" data-area="Direito Trabalhista">
+              <svg class="index__icon" aria-hidden="true"><use href="#i-trabalhista"/></svg>
+              <span class="index__name">Direito Trabalhista</span>
+              <span class="index__desc">Orientação a empregados e empregadores sobre contratos de trabalho, rescisões, acordos e processos.</span>
+              <span class="index__go">Conversar sobre este tema <svg aria-hidden="true"><use href="#i-chevron"/></svg></span>
+            </a>
+          </li>
+          <li class="index__row">
+            <a class="index__link" href="#contato" data-area="Direito de Família e Sucessões">
+              <svg class="index__icon" aria-hidden="true"><use href="#i-familia"/></svg>
+              <span class="index__name">Família e Sucessões</span>
+              <span class="index__desc">Divórcios, guarda, pensão alimentícia, inventários e planejamento sucessório, conduzidos com discrição.</span>
+              <span class="index__go">Conversar sobre este tema <svg aria-hidden="true"><use href="#i-chevron"/></svg></span>
+            </a>
+          </li>
+          <li class="index__row">
+            <a class="index__link" href="#contato" data-area="Direito Imobiliário">
+              <svg class="index__icon" aria-hidden="true"><use href="#i-imobiliario"/></svg>
+              <span class="index__name">Direito Imobiliário</span>
+              <span class="index__desc">Compra e venda, locação, regularização de imóveis e análise de documentos antes da assinatura.</span>
+              <span class="index__go">Conversar sobre este tema <svg aria-hidden="true"><use href="#i-chevron"/></svg></span>
+            </a>
+          </li>
+          <li class="index__row">
+            <a class="index__link" href="#contato" data-area="Direito Previdenciário">
+              <svg class="index__icon" aria-hidden="true"><use href="#i-previdenciario"/></svg>
+              <span class="index__name">Direito Previdenciário</span>
+              <span class="index__desc">Aposentadorias, benefícios e revisões junto ao INSS, a partir de um estudo detalhado do histórico de contribuições.</span>
+              <span class="index__go">Conversar sobre este tema <svg aria-hidden="true"><use href="#i-chevron"/></svg></span>
+            </a>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ DIFERENCIAIS ============ -->
+    <section class="section section--stone values" id="compromisso" aria-labelledby="values-title">
+      <div class="container values__grid">
+        <div class="values__head">
+          <h2 class="section-title" id="values-title">Compromisso que vai além da atuação jurídica.</h2>
+          <p class="values__intro">Nenhum resultado pode ser prometido em um processo. O que podemos assegurar é a forma como cada caso é conduzido.</p>
+        </div>
+
+        <ul class="values__list" role="list">
+          <li class="value">
+            <h3 class="value__title">Atendimento próximo e humanizado</h3>
+            <p>Você é recebido por quem vai cuidar do seu caso, com tempo para explicar a situação sem pressa e sem julgamentos.</p>
+          </li>
+          <li class="value">
+            <h3 class="value__title">Estratégia jurídica individualizada</h3>
+            <p>Antes de qualquer medida, analisamos documentos, riscos e alternativas, incluindo caminhos consensuais quando fazem sentido.</p>
+          </li>
+          <li class="value">
+            <h3 class="value__title">Comunicação clara e transparente</h3>
+            <p>Orientações em linguagem acessível e atualizações a cada etapa relevante, para que você entenda cada decisão.</p>
+          </li>
+          <li class="value">
+            <h3 class="value__title">Ética e responsabilidade profissional</h3>
+            <p>Atuação em conformidade com o Estatuto da Advocacia e com o Código de Ética e Disciplina da OAB.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ EQUIPE ============
+         CONTEÚDO DEMONSTRATIVO: nomes, cargos e textos são fictícios.
+         As fotografias são de banco de imagens (Pexels) e não retratam advogados reais.
+         Substitua por dados e fotos reais antes de publicar. -->
+    <section class="section section--paper team" id="equipe" aria-labelledby="team-title">
+      <div class="container">
+        <div class="team__head">
+          <h2 class="section-title" id="team-title">As pessoas por trás de cada orientação.</h2>
+          <p class="team__intro">Uma equipe enxuta, para que cada cliente saiba exatamente com quem está falando.</p>
+        </div>
+
+        <div class="team__grid">
+          <article class="person person--lead">
+            <figure class="person__photo reveal">
+              <img src="assets/images/equipe-helena.webp" width="900" height="1125" alt="Retrato de Helena Albuquerque, de blazer preto" loading="lazy" decoding="async">
+            </figure>
+            <div class="person__body">
+              <h3 class="person__name">Helena Albuquerque</h3>
+              <p class="person__role">Sócia fundadora <span aria-hidden="true">/</span> Direito Civil, Família e Sucessões</p>
+              <p class="person__bio">Dedica-se a questões patrimoniais e familiares, com atenção especial à construção de acordos e ao planejamento sucessório.</p>
+            </div>
+          </article>
+
+          <article class="person">
+            <figure class="person__photo reveal">
+              <img src="assets/images/equipe-rafael.webp" width="700" height="875" alt="Retrato em preto e branco de Rafael Monteiro, de terno" loading="lazy" decoding="async">
+            </figure>
+            <div class="person__body">
+              <h3 class="person__name">Rafael Monteiro</h3>
+              <p class="person__role">Sócio <span aria-hidden="true">/</span> Direito Empresarial e Imobiliário</p>
+              <p class="person__bio">Acompanha empresas em contratos, reorganizações societárias e operações imobiliárias, do planejamento à assinatura.</p>
+            </div>
+          </article>
+
+          <article class="person">
+            <figure class="person__photo reveal">
+              <img src="assets/images/equipe-tiago.webp" width="700" height="875" alt="Retrato de Tiago Nascimento, de terno escuro" loading="lazy" decoding="async">
+            </figure>
+            <div class="person__body">
+              <h3 class="person__name">Tiago Nascimento</h3>
+              <p class="person__role">Advogado associado <span aria-hidden="true">/</span> Direito Trabalhista e Previdenciário</p>
+              <p class="person__bio">Orienta trabalhadores e empresas em relações de trabalho e conduz o planejamento de benefícios previdenciários.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CTA INSTITUCIONAL ============ -->
+    <section class="section section--ink closing" aria-labelledby="closing-title">
+      <div class="container">
+        <div class="closing__plate">
+          <h2 class="closing__title" id="closing-title">Orientação jurídica começa com uma boa conversa.</h2>
+          <p class="closing__text">Entre em contato e conheça como podemos auxiliar na análise da sua situação.</p>
+          <a class="btn btn--gold" href="#contato">Fale com Nossa Equipe</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTATO ============
+         Dados de contato demonstrativos. Os valores usados pelos botões
+         ficam centralizados em js/main.js (objeto CONTATO). -->
+    <section class="section section--stone contact" id="contato" aria-labelledby="contact-title">
+      <div class="container contact__grid">
+        <div class="contact__info">
+          <h2 class="section-title" id="contact-title">Contato</h2>
+          <p class="contact__intro">Conte brevemente o que está acontecendo. Retornamos em horário comercial para entender sua situação e indicar os próximos passos.</p>
+
+          <ul class="channels" role="list">
+            <li class="channel">
+              <svg class="channel__icon channel__icon--solid" aria-hidden="true"><use href="#i-whatsapp"/></svg>
+              <div>
+                <p class="channel__label">WhatsApp</p>
+                <a class="channel__value" href="https://wa.me/5511900000000" target="_blank" rel="noopener" data-contact="whatsapp-link"><span data-contact="whatsapp-display">(11) 90000-0000</span></a>
+              </div>
+            </li>
+            <li class="channel">
+              <svg class="channel__icon" aria-hidden="true"><use href="#i-mail"/></svg>
+              <div>
+                <p class="channel__label">E-mail</p>
+                <a class="channel__value" href="mailto:contato@aureumadvocacia.com.br" data-contact="email-link"><span data-contact="email-display">contato@aureumadvocacia.com.br</span></a>
+              </div>
+            </li>
+            <li class="channel">
+              <svg class="channel__icon" aria-hidden="true"><use href="#i-pin"/></svg>
+              <div>
+                <p class="channel__label">Endereço</p>
+                <address class="channel__value channel__value--static">Av. Exemplo, 1000, conj. 101<br>Jardim Paulista, São Paulo – SP</address>
+              </div>
+            </li>
+            <li class="channel">
+              <svg class="channel__icon" aria-hidden="true"><use href="#i-clock"/></svg>
+              <div>
+                <p class="channel__label">Horário de atendimento</p>
+                <p class="channel__value channel__value--static">Segunda a sexta, das 9h às 18h<br>Atendimento presencial com horário marcado</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <form class="form" id="form-contato" novalidate data-contact-form>
+          <h3 class="form__title">Envie sua mensagem</h3>
+          <p class="form__hint">O formulário prepara a mensagem e abre o WhatsApp para você enviar. Nenhum dado fica armazenado neste site.</p>
+
+          <div class="field">
+            <label for="f-nome">Nome</label>
+            <input id="f-nome" name="nome" type="text" autocomplete="name" required aria-describedby="f-nome-erro">
+            <p class="field__error" id="f-nome-erro" hidden>Informe seu nome para que possamos retornar.</p>
+          </div>
+
+          <div class="field">
+            <label for="f-assunto">Assunto</label>
+            <div class="select">
+              <select id="f-assunto" name="assunto">
+                <option value="">Ainda não sei / outro assunto</option>
+                <option>Direito Civil</option>
+                <option>Direito Empresarial</option>
+                <option>Direito Trabalhista</option>
+                <option>Direito de Família e Sucessões</option>
+                <option>Direito Imobiliário</option>
+                <option>Direito Previdenciário</option>
+              </select>
+              <svg aria-hidden="true"><use href="#i-chevron"/></svg>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="f-mensagem">Mensagem</label>
+            <textarea id="f-mensagem" name="mensagem" rows="5" required aria-describedby="f-mensagem-erro"></textarea>
+            <p class="field__error" id="f-mensagem-erro" hidden>Escreva uma breve descrição da sua situação.</p>
+          </div>
+
+          <div class="form__actions">
+            <button class="btn btn--ink" type="submit">
+              <svg aria-hidden="true"><use href="#i-whatsapp"/></svg>
+              Enviar pelo WhatsApp
+            </button>
+            <button class="link-quiet link-quiet--dark" type="button" data-send-email>Prefiro enviar por e-mail</button>
+          </div>
+          <p class="form__status" role="status" aria-live="polite" data-form-status></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="site-footer__grid">
+        <div class="site-footer__brand">
+          <a class="logo" href="#inicio" aria-label="Aureum Advocacia, voltar ao início">
+            <span class="logo__name">Aureum</span>
+            <span class="logo__rule" aria-hidden="true"></span>
+            <span class="logo__kind">Advocacia</span>
+          </a>
+          <p>Advocacia para pessoas e empresas, com atendimento pessoal, ética e rigor técnico em cada orientação.</p>
+        </div>
+
+        <nav class="site-footer__col" aria-label="Links rápidos">
+          <h2 class="site-footer__title">Navegação</h2>
+          <ul role="list">
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#escritorio">O Escritório</a></li>
+            <li><a href="#atuacao">Áreas de Atuação</a></li>
+            <li><a href="#equipe">Nossa Equipe</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
+        </nav>
+
+        <div class="site-footer__col">
+          <h2 class="site-footer__title">Áreas de atuação</h2>
+          <ul role="list">
+            <li>Direito Civil</li>
+            <li>Direito Empresarial</li>
+            <li>Direito Trabalhista</li>
+            <li>Família e Sucessões</li>
+            <li>Direito Imobiliário</li>
+            <li>Direito Previdenciário</li>
+          </ul>
+        </div>
+
+        <div class="site-footer__col">
+          <h2 class="site-footer__title">Contato</h2>
+          <ul role="list">
+            <li><a href="https://wa.me/5511900000000" target="_blank" rel="noopener" data-contact="whatsapp-link"><span data-contact="whatsapp-display">(11) 90000-0000</span></a></li>
+            <li><a href="mailto:contato@aureumadvocacia.com.br" data-contact="email-link"><span data-contact="email-display">contato@aureumadvocacia.com.br</span></a></li>
+            <li>Av. Exemplo, 1000, conj. 101<br>São Paulo – SP</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="site-footer__base">
+        <p>© <span data-year>2026</span> Aureum Advocacia. Todos os direitos reservados.</p>
+        <p class="site-footer__demo">Site demonstrativo. Escritório, profissionais e dados de contato fictícios. Fotografias: Pexels.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
